@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/*****************************************************\
+Theme Name: Reservas Alquilauto
+Theme URI: http://reservas.alquilauto.com.ve
+Description: Sistema de Reservaciones Alquilauto Mérida
+Version: 1.0
+Author: Alexander Marcucci Suárez
+Author URI: http://www.twitter.com/AMarcucciS
+\*****************************************************/
+
+body {
+	margin:0;
+	padding:0;
+	background:#fff url(../img/bg.jpg) repeat;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	overflow-x:hidden;
+}
+
+a {
+	color:#F7AC00;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#666666;
+}
+
+a:hover {
+	color:#494949;
+	text-decoration:underline;
+}
+
+h2 {
+	font-size:28px;
+	color: #F7AC00;
+	margin:0;
+	padding-bottom:10px;
+	text-shadow: 1px 1px 3px #333;
+	-moz-text-shadow: 1px 1px 3px #333;
+	-o-text-shadow: 1px 1px 3px #333;
+	-webkit-text-shadow: 1px 1px 3px #333;
+}
+
+h3 {
+	font-size:22px;
+	color: #F7AC00;
+	text-shadow: 1px 1px 2px #333;
+	-moz-text-shadow: 1px 1px 2px #333;
+	-o-text-shadow: 1px 1px 2px #333;
+	-webkit-text-shadow: 1px 1px 2px #333;
+}
+
+
+/*..................... Cabecera */
+
+#fondo {
+	margin:0 auto;
+	padding:0;
+	height:140px;
+	width:100%;
+	background:#333;
+	z-index:-10000;
+}
+
+#cabecera {
+	width:950px;
+	height:140px;
+	margin:0 auto;
+	position:relative;	
+}
+
+#logo {
+	background:no-repeat left top;
+	width:400px;
+	border:none;
+	margin:3px 0 0 5px;
+	position:absolute;
+	height: 130px;
+}
+
+#img-head {
+	background:url(../img/img-head.png) right top no-repeat;
+	right:150px;
+	height:130px;
+	width:332px;
+	top:5px;
+	margin:0;
+	padding:0;
+	position:absolute;
+	z-index:2;
+}
+	
+
+#menu {
+    width:100%;
+	height:40px;
+	background: url(../img/nav.jpg) repeat-x left top;
+	margin:0 auto;
+}
+
+#menu ul, li {
+        list-style-type: none;
+}
+
+#menu ul {
+   	    margin:0 auto;
+        padding: 0;
+		width:950px;
+}
+
+#menu li {
+		float:left;
+		position:relative;
+		display:block;
+}
+
+#menu a {
+        text-decoration: none;
+        color: #fff;
+		text-shadow:0px 1px 0px #111;
+		-moz-text-shadow:0px 1px 0px #111;
+		-o-text-shadow:0px 1px 0px #111;
+		-webkit-text-shadow:0px 1px 0px #111;
+		font-weight: normal;
+        background:#F7AC00 url(../img/sepnav.jpg) no-repeat right top, url(../img/nav.jpg) repeat-x left top;
+        display: block;
+        padding:8px 30px 0 31px;
+        text-align: center;
+		font-size:15px;
+		height:32px;
+        border:none;
+		transition-property:background, color;
+	transition:ease-out 0.4s;
+	transition-delay:0s;
+	-webkit-transition-property:background, color;
+	-webkit-transition:ease-out 0.4s;
+	-webkit-transition-delay:0s;
+	-moz-transition-property:background, color;
+	-moz-transition:ease-out 0.4s;
+	-moz-transition-delay:0s;
+}
+
+
+#menu #activo {
+		transition:ease-out 0.4s;
+		background: #333;
+		color:#f4f4f4;
+		text-shadow:none;
+	transition-delay:0s;
+	-webkit-transition-property:background, color;
+	-webkit-transition:ease-out 0.4s;
+	-webkit-transition-delay:0s;
+	-moz-transition-property:background, color;
+	-moz-transition:ease-out 0.4s;
+	-moz-transition-delay:0s;
+}	
+
+#menu a:hover {
+	background: #333;
+	color:#fff;
+	transition-property:background, color;
+	transition:ease-out 0.4s;
+	transition-delay:0s;
+	-webkit-transition-property:background, color;
+	-webkit-transition:ease-out 0.4s;
+	-webkit-transition-delay:0s;
+	-moz-transition-property:background, color;
+	-moz-transition:ease-out 0.4s;
+	-moz-transition-delay:0s;
+	text-shadow: 1px 1px 2px #F7AC00;
+	-moz-text-shadow: 1px 1px 2px #F7AC00;
+	-o-text-shadow: 1px 1px 2px #F7AC00;
+	-webkit-text-shadow: 1px 1px 2px #F7AC00;
+	font-size: 15px;
+}
+
+/*.......................Contenido*/
+#pagina {
+	width:950px;
+	height:595px;
+	top:0;
+	position:relative;
+	margin:0 auto;
+	padding:0;
+	background:#fff url(../img/bg.jpg) repeat;	
+}
+
+.cont {
+	background:#E6E6E6;
+	padding:10px 15px;
+	border-bottom-right-radius:45px;
+}
+
+#reserva-ahora {
+	top: 10px;
+	left: 0px;
+	position: absolute;
+	width: 920px;
+	height: 441px;
+}
+
+form#form1, form#form2 {
+	font-weight:normal;
+	font-size:13px;
+	color:#414141;
+}
+
+#info {
+	background:#fff;
+	width:650px;
+	height:150px;
+	top:1534px;
+	left:0;
+	position:absolute;
+}
+
+#info h5 {
+	font-size: 11px;
+	color: #666;
+	font-style: normal;
+}
+#pagina #info h4 {
+	color: #333;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	text-shadow:0px 1px 0px #F7AC00;
+	-moz-text-shadow:0px 1px 0px #F7AC00;
+	-o-text-shadow:0px 1px 0px #F7AC00;
+	-webkit-text-shadow:0px 1px 0px #F7AC00;
+	padding:0px;
+	margin:0px;
+}
+
+.boton {
+	background:#F7AC00;
+	border-radius:4px;
+	cursor:pointer;
+	border:none;
+	padding:4px 8px;
+	color:#333;
+	text-shadow:0px 1px 0px #F2F2F2;
+	-moz-text-shadow:0px 1px 0px #F2F2F2;
+	-o-text-shadow:0px 1px 0px #F2F2F2;
+	-webkit-text-shadow:0px 1px 0px #F2F2F2;
+	box-shadow:0px 0px 6px #333;
+	-moz-box-shadow:0px 0px 6px #333;
+	-o-box-shadow:0px 0px 6px #333;
+	-webkit-box-shadow:0px 0px 6px #333;
+}
+
+.boton:hover {
+	background:#F9D546;
+}
+
+.cajas-de-texto {
+	border: 1px solid #CCC;
+	background:#F4F4F4;
+}
+
+.cajas-de-texto:hover {
+	border: 1px solid #B7B7B7;
+	background:#fff;
+}
+
+.cajas-de-texto:focus {
+	border: 1px solid #B7B7B7;
+	background:#fff;
+	box-shadow:0px 0px 7px #595959;
+	-moz-box-shadow:0px 0px 7px #595959;
+	-o-box-shadow:0px 0px 7px #595959;
+	-webkit-box-shadow:0px 0px 7px #595959;
+}
+
+#contenido {
+	margin:80px 20px 20px 0px;
+	padding:10px 20px;
+	width:640px;
+	height:866px;
+	position:absolute;
+	color:#242424;
+	top: 560px;
+	left:0px;
+}
+
+#enviarp {
+	margin:10px 20px 20px 0px;
+	padding:10px 20px;
+	width:940px;
+	height:380px;
+	position:absolute;
+	color:#242424;
+	top:0px;
+	left:0px;
+}
+
+#contenviar {
+	margin:10px 20px 20px 0px;
+	padding:10px 20px;
+	width:940px;
+	height:380px;
+	position:absolute;
+	color:#242424;
+	top:0px;
+	left:0px;
+}
+
+#contenido p {
+	color:#242424;
+	font-size:16px;
+	text-align: justify;
+}
+
+#sepa {
+	width:800px;
+	height:3px;
+	bottom:70px;
+	display:block;
+	position:relative;
+	margin:0 auto;
+}
+
+#links-img {
+	position: relative;
+	width: 950px;
+	height: 200px;
+	bottom: 50px;
+	margin: 0 auto;
+}
+
+#links-img a, #links-img a:visited {
+	background:#EFEFEF;
+	color:#222;
+	opacity:0.8;
+	text-decoration:none;
+	font-size:20px;
+	font-weight:normal;
+}
+
+#links-img a:hover {
+	color:#F7AC00;
+	opacity:1;
+	text-shadow:0px 1px 0px #666;
+	-moz-text-shadow:0px 1px 0px #666;
+	-o-text-shadow:0px 1px 0px #666;
+	-webkit-text-shadow:0px 1px 0px #666;
+}
+
+#pie {
+	width:100%;
+	height:100px;
+	top:0;
+	position:relative;
+	margin:0 auto;
+	padding:0;
+	background:#ccc;
+	text-align: center;
+	clip: rect(auto,auto,0px,auto);
+}
+
+#legal {
+	margin:0 auto;
+	text-align: center;
+	position:relative;
+	font-size: 11px;
+	color: #666;
+	top:10px;
+}
+
+#legal:hover {
+	text-decoration:none;
+}
+
+#logo-pie {
+	background:url(../img/logo-pie.png) no-repeat;
+	width:220px;
+	height:75px;
+	margin:0 auto;
+	position:relative;
+	top:10px;
+	opacity:0.5;
+}
